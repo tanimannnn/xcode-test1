@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ButtonEx.h"
 
 @implementation AppDelegate
 
@@ -15,15 +16,30 @@
 - (void)dealloc
 {
     [_window release];
+    [_viewCtl release];
     [super dealloc];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    /*
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    */
+    
+    _window=[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    _window.backgroundColor = [UIColor whiteColor];
+    [_window makeKeyAndVisible];
+    
+    CGRect bounds = [[UIScreen mainScreen] bounds];
+    bounds.origin.y += 20;
+    bounds.size.height -= 20;
+    _viewCtl = [[ButtonEx alloc] init];
+    [_viewCtl.view setFrame:bounds];
+    [_window addSubview:_viewCtl.view];
+    
     return YES;
 }
 

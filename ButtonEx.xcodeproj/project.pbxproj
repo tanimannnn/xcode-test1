@@ -13,6 +13,9 @@
 		41716C3115F1C548004FEF38 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 41716C2F15F1C548004FEF38 /* InfoPlist.strings */; };
 		41716C3315F1C548004FEF38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41716C3215F1C548004FEF38 /* main.m */; };
 		41716C3715F1C548004FEF38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41716C3615F1C548004FEF38 /* AppDelegate.m */; };
+		41716C4015F1C612004FEF38 /* ButtonEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 41716C3E15F1C611004FEF38 /* ButtonEx.m */; };
+		41716C4115F1C612004FEF38 /* ButtonEx.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41716C3F15F1C611004FEF38 /* ButtonEx.xib */; };
+		41716C4315F1C64A004FEF38 /* kameo.png in Resources */ = {isa = PBXBuildFile; fileRef = 41716C4215F1C64A004FEF38 /* kameo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +23,16 @@
 		41716C2615F1C548004FEF38 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		41716C2815F1C548004FEF38 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		41716C2A15F1C548004FEF38 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		41716C2E15F1C548004FEF38 /* ButtonEx-Info.plist */ = {isa = PBXFileReference; path = "ButtonEx-Info.plist"; sourceTree = "<group>"; };
+		41716C2E15F1C548004FEF38 /* ButtonEx-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ButtonEx-Info.plist"; sourceTree = "<group>"; };
 		41716C3015F1C548004FEF38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		41716C3215F1C548004FEF38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		41716C3415F1C548004FEF38 /* ButtonEx-Prefix.pch */ = {isa = PBXFileReference; path = "ButtonEx-Prefix.pch"; sourceTree = "<group>"; };
-		41716C3515F1C548004FEF38 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		41716C3415F1C548004FEF38 /* ButtonEx-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ButtonEx-Prefix.pch"; sourceTree = "<group>"; };
+		41716C3515F1C548004FEF38 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		41716C3615F1C548004FEF38 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		41716C3D15F1C611004FEF38 /* ButtonEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonEx.h; sourceTree = "<group>"; };
+		41716C3E15F1C611004FEF38 /* ButtonEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonEx.m; sourceTree = "<group>"; };
+		41716C3F15F1C611004FEF38 /* ButtonEx.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonEx.xib; sourceTree = "<group>"; };
+		41716C4215F1C64A004FEF38 /* kameo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kameo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,9 +52,13 @@
 		41716C1715F1C548004FEF38 = {
 			isa = PBXGroup;
 			children = (
+				41716C3D15F1C611004FEF38 /* ButtonEx.h */,
+				41716C3E15F1C611004FEF38 /* ButtonEx.m */,
+				41716C3F15F1C611004FEF38 /* ButtonEx.xib */,
 				41716C2C15F1C548004FEF38 /* ButtonEx */,
 				41716C2515F1C548004FEF38 /* Frameworks */,
 				41716C2315F1C548004FEF38 /* Products */,
+				41716C4215F1C64A004FEF38 /* kameo.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,6 +152,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				41716C3115F1C548004FEF38 /* InfoPlist.strings in Resources */,
+				41716C4115F1C612004FEF38 /* ButtonEx.xib in Resources */,
+				41716C4315F1C64A004FEF38 /* kameo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +166,7 @@
 			files = (
 				41716C3315F1C548004FEF38 /* main.m in Sources */,
 				41716C3715F1C548004FEF38 /* AppDelegate.m in Sources */,
+				41716C4015F1C612004FEF38 /* ButtonEx.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
